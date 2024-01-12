@@ -1,0 +1,243 @@
+package com.company;
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Dobrodošli u Matelijunaš!");
+        System.out.println("==================================");
+            Scanner sc = new Scanner(System.in);
+            String a;
+            int dobitak = 0;
+            int pitanje = 1;
+
+            String operatorSwitch;
+            float b = 0;
+            float c = 0;
+
+            Random number = new Random();
+            int d = number.nextInt(10);
+            int e = number.nextInt(10);
+
+            Random operatorChoice = new Random();
+            int operator = operatorChoice.nextInt(4);
+
+            switch (operator) {
+
+                case 0:
+                    operatorSwitch = "+";
+                    c = d + e;
+                    break;
+                case 1:
+                    operatorSwitch = "-";
+                    c = d - e;
+                    break;
+                case 2:
+                    operatorSwitch = "*";
+                    c = d * e;
+                    break;
+                case 3:
+                    operatorSwitch = "/";
+                    c = d / e;
+                    break;
+                default:
+                    operatorSwitch = "";
+            }
+            System.out.println("Koji je točan odgovor  na " + pitanje + " pitanje: " + d + operatorSwitch + e + "?");
+            b = sc.nextInt();
+
+            if (b != c) {
+                System.out.println("Pogrešan odgovor! Točan odgovor je: " + c + " ,više sreće drugi put!\nVaš dobitak koji nosite kući je: " + dobitak + "kn.");
+                return;
+            }
+            else {
+                if (b == c)
+                    System.out.println("Točan odgovor!");
+                System.out.println("Osvojili ste 100 kn.");
+                pitanje++;
+            }
+            System.out.println("Želite li nastaviti? da/ne");
+            Scanner nastavak_unos = new Scanner(System.in);
+            String nastavak = nastavak_unos.nextLine();
+            if(nastavak.equals("da"))
+            {
+                d = number.nextInt(10);
+                e = number.nextInt(10);
+                switch (operator) {
+                    case 0:
+                        operatorSwitch = "+";
+                        c = d + e;
+                        break;
+                    case 1:
+                        operatorSwitch = "-";
+                        c = d - e;
+                        break;
+                    case 2:
+                        operatorSwitch = "*";
+                        c = d * e;
+                        break;
+                    case 3:
+                        operatorSwitch = "/";
+                        c = d / e;
+                        break;
+                    default:
+                        operatorSwitch = "";
+                }
+                System.out.println("Koji je točan odgovor  na " + pitanje + " pitanje: " + d + operatorSwitch + e + "?");
+                b = sc.nextInt();
+
+                if (b != c) {
+                    System.out.println("Pogrešan odgovor! Točan odgovor je: " + c + " ,više sreće drugi put!\nVaš dobitak koji nosite kući je: " + dobitak + "kn.");
+                    return;
+                }
+                else {
+                    if (b == c)
+                        System.out.println("Točan odgovor!");
+                    System.out.println("Osvojili ste 200 kn.");
+                    pitanje++;
+                }
+                System.out.println("Želite li nastaviti? da/ne");
+                 nastavak_unos = new Scanner(System.in);
+                 nastavak = nastavak_unos.nextLine();
+            }
+            else {
+                System.out.println("Hvala što ste igrali!\nVaš dobitak je: " + dobitak +"kn");
+            }
+        if(nastavak.equals("da"))
+        {
+            d = number.nextInt(10);
+            e = number.nextInt(10);
+            switch (operator) {
+                case 0:
+                    operatorSwitch = "+";
+                    c = d + e;
+                    break;
+                case 1:
+                    operatorSwitch = "-";
+                    c = d - e;
+                    break;
+                case 2:
+                    operatorSwitch = "*";
+                    c = d * e;
+                    break;
+                case 3:
+                    operatorSwitch = "/";
+                    c = d / e;
+                    break;
+                default:
+                    operatorSwitch = "";
+            }
+            System.out.println("Koji je točan odgovor  na " + pitanje + " pitanje: " + d + operatorSwitch + e + "?");
+            b = sc.nextInt();
+
+            if (b != c) {
+                System.out.println("Pogrešan odgovor! Točan odgovor je: " + c + " ,više sreće drugi put!\nVaš dobitak koji nosite kući je: " + dobitak + "kn.");
+                return;
+            }
+            else {
+                if (b == c)
+                    System.out.println("Točan odgovor!");
+                System.out.println("Osvojili ste 300 kn.");
+                pitanje++;
+            }
+            System.out.println("Želite li nastaviti? da/ne");
+            nastavak_unos = new Scanner(System.in);
+            nastavak = nastavak_unos.nextLine();
+        }
+        else {
+            System.out.println("Hvala što ste igrali!\nVaš dobitak je: " + dobitak +"kn");
+        }
+        if(nastavak.equals("da"))
+        {
+            d = number.nextInt(10);
+            e = number.nextInt(10);
+            switch (operator) {
+                case 0:
+                    operatorSwitch = "+";
+                    c = d + e;
+                    break;
+                case 1:
+                    operatorSwitch = "-";
+                    c = d - e;
+                    break;
+                case 2:
+                    operatorSwitch = "*";
+                    c = d * e;
+                    break;
+                case 3:
+                    operatorSwitch = "/";
+                    c = d / e;
+                    break;
+                default:
+                    operatorSwitch = "";
+            }
+            System.out.println("Koji je točan odgovor  na " + pitanje + " pitanje: " + d + operatorSwitch + e + "?");
+            b = sc.nextInt();
+
+            if (b != c) {
+                System.out.println("Pogrešan odgovor! Točan odgovor je: " + c + " ,više sreće drugi put!\nVaš dobitak koji nosite kući je: " + dobitak + "kn.");
+                return;
+            }
+            else {
+                if (b == c)
+                    System.out.println("Točan odgovor!");
+                System.out.println("Osvojili ste 500 kn.");
+                pitanje++;
+            }
+            System.out.println("Želite li nastaviti? da/ne");
+            nastavak_unos = new Scanner(System.in);
+            nastavak = nastavak_unos.nextLine();
+        }
+        else {
+            System.out.println("Hvala što ste igrali!\nVaš dobitak je: " + dobitak +"kn");
+        }
+        if(nastavak.equals("da"))
+        {
+            d = number.nextInt(10);
+            e = number.nextInt(10);
+            switch (operator) {
+                case 0:
+                    operatorSwitch = "+";
+                    c = d + e;
+                    break;
+                case 1:
+                    operatorSwitch = "-";
+                    c = d - e;
+                    break;
+                case 2:
+                    operatorSwitch = "*";
+                    c = d * e;
+                    break;
+                case 3:
+                    operatorSwitch = "/";
+                    c = d / e;
+                    break;
+                default:
+                    operatorSwitch = "";
+            }
+            System.out.println("Koji je točan odgovor  na " + pitanje + " pitanje: " + d + operatorSwitch + e + "?");
+            b = sc.nextInt();
+
+            if (b != c) {
+                System.out.println("Pogrešan odgovor! Točan odgovor je: " + c + " ,više sreće drugi put!\nVaš dobitak koji nosite kući je: " + dobitak + "kn.");
+                return;
+            }
+            else {
+                if (b == c)
+                    System.out.println("Točan odgovor!");
+                System.out.println("Osvojili ste 1000 kn.");
+                dobitak = dobitak + 1000;
+                pitanje++;
+            }
+            System.out.println("Želite li nastaviti? da/ne");
+            nastavak_unos = new Scanner(System.in);
+            nastavak = nastavak_unos.nextLine();
+        }
+        else {
+            System.out.println("Hvala što ste igrali!\nVaš dobitak je: " + dobitak +"kn");
+        }
+
+        }
+    }
