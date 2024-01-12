@@ -1,0 +1,59 @@
+package com.company;
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a,nastavak;
+
+
+            String operatorSwitch;
+            int b=0;
+            int c=0;
+
+            Random number = new Random();
+            int d = number.nextInt(10) +1;
+            int e = number.nextInt(10) +1;
+
+            Random operatorChoice = new Random();
+            int operator = operatorChoice.nextInt(4);
+
+            switch (operator){
+
+                case 0: operatorSwitch= "+";
+                    c = d+e;
+                    break;
+                case 1: operatorSwitch= "-";
+                    c = d-e;
+                    break;
+                case 2: operatorSwitch= "*";
+                    c = d*e;
+                    break;
+                case 3: operatorSwitch= "/";
+                    c = d/e;
+                    break;
+                default: operatorSwitch= "";
+            }
+            System.out.println("Koji je točan odgovor: "+d+operatorSwitch+e+"?");
+            b = sc.nextInt();
+
+
+            if(b!=c)
+                System.out.println("Pogrešan odgovor! Točan odgovor je: "+c+ " ,više sreće drugi put!");
+            else{if(b==c)
+                System.out.println("Točan odgovor je!"+c);
+                System.out.println("Osvojili ste 100 kn.");
+            }
+            System.out.println("Želite li nastaviti? da/ne");
+            if(nastavak=="da")
+            {
+                
+            }
+            else
+                System.out.println("Hvala što ste igrali!");    
+
+        }
+}
